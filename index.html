@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Aviles Sebastian | Portfolio</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --text-dark: #333;
+            --text-light: #f9f9f9;
+            --bg-color: #f4f7f6;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: var(--text-dark); 
+            background-color: var(--bg-color); 
+        }
+
+        header { 
+            background: var(--primary); 
+            color: var(--text-light); 
+            padding: 4rem 2rem; 
+            text-align: center; 
+        }
+
+        .intro-text {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            color: #ecf0f1;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-style: italic;
+        }
+
+        header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+        header h2 { font-size: 1.5rem; font-weight: 300; color: #bdc3c7; margin-bottom: 1.5rem; }
+        
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .contact-info a:hover { text-decoration: underline; }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background: #fff;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h3 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h4 { color: var(--secondary); font-size: 1.2rem; margin-top: 1.5rem; }
+        
+        .strengths-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .strengths-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .strength-card {
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-left: 4px solid var(--accent);
+            border-radius: 4px;
+        }
+
+        .content-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p class="intro-text">"Hello, welcome to my website! My name is Ivan Aviles Sebastian, feel free to get in contact!"</p>
+        
+        <h1>Ivan Aviles Sebastian</h1>
+        <h2>Management Information Systems | Business Development</h2>
+        <div class="contact-info">
+            <a href="mailto:imivan06@gmail.com">imivan06@gmail.com</a> | 
+            <span>(531)-777-4225</span> | 
+            <a href="https://www.linkedin.com/in/ivan-aviles-sebastian-4b3a142a4/" target="_blank">LinkedIn Profile</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h3>Tell About Yourself & Career Description</h3>
+            <p>I am a Management Information Systems student at the University of Nebraska Omaha, passionate about the intersection of technology, business development, and data-driven solutions. I thrive on building efficient systems, whether I am developing business models, analyzing sports data and probabilities, or managing the administrative and technical workflows of my independent DJ business. I am currently focused on exploring roles within the MIS field that allow me to manage complex structures and optimize organizational processes.</p>
+        </section>
+
+        <section id="personal-statement">
+            <h3>Personal Statement</h3>
+            <p>My interest in Management Information Systems didn't begin in a university classroom; it started with a lifelong fascination with efficiency. Since my childhood, I have always gravitated toward the mechanics of management. That early niche interest in how things work and how to make them work better naturally evolved into my pursuit of an MIS degree. I enjoy the challenge of looking at a complex structure, identifying the inefficiencies, and implementing streamlined solutions. My ultimate professional goal is to leverage this natural inclination for management to secure a stable, long-term role where I can consistently add value and optimize systems and companies.</p>
+        </section>
+
+        <section id="strengths">
+            <h3>Strengths</h3>
+            <div class="strengths-grid">
+                <div class="strength-card">
+                    <h4>Activator & Adaptability</h4>
+                    <p>I thrive on momentum and flexibility. I am driven to turn concepts into immediate action and adapt seamlessly to whatever the situation requires, whether managing tech strategies or dynamic live events.</p>
+                </div>
+                <div class="strength-card">
+                    <h4>Restorative</h4>
+                    <p>I am a natural problem-solver. I excel at diagnosing issues and resolving them to build efficient solutions, from fine-tuning business models to troubleshooting hardware workflows.</p>
+                </div>
+                <div class="strength-card">
+                    <h4>Empathy & Communication</h4>
+                    <p>Technology is only as good as the people it serves. I use an instinctive understanding of others and strong conversational and presentation skills to bridge the gap between complex systems and human needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline">
+            <h3>Career Timeline</h3>
+            <img src="timeline.png" alt="Career Readiness Timeline" class="content-img">
+        </section>
+
+        <section id="resume">
+            <h3>Resume</h3>
+            <img src="resume1.png" alt="Ivan Aviles Sebastian Resume" class="content-img">
+        </section>
+
+    </div>
+</body>
+</html>
